@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/image/backgrounf-body.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+/* nav-bar-top */
+
+#nav-top {
+    font-family: 'Pacifico', cursive;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(47deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+#nav-top::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(47deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+#nav-top:hover:after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+/* nav-bar-top */
+
+/* nav-bar-bottom */
+
+#logo {
+    font-family: 'Bangers', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(47deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, #fcb045 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+/* nav-bar-bottom */
+
+
+
+/* icon-bar */
+
+.navbar-toggler-icon{
+    color: aqua;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+.navbar-dark .navbar-toggler:hover,
+.navbar-dark .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* icon-bar */
+
+/* back-ground-page-one */
+
+.back-ground-page-one{
+    background-color: #ffb894b5;
+    height: 575px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-ground-page-one .title h1{
+    color: antiquewhite;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(47deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.input-searsh{
+    display: flex;
+    background-color:#3d0c0f91;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px ;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.input-searsh form{
+    display: flex;
+    align-items: center;
+    border: 1px solid antiquewhite;
+    border-radius: 15px;
+    width: 100px;
+    transition: 1s;
+}
+
+.input-searsh form:hover{
+    width: 243.66px;
+}
+
+.input-searsh form input{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: antiquewhite;
+    text-transform: capitalize;
+}
+
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+    color: antiquewhite;
+    padding: 10px 10px 10px 0px;
+    font-size: 17pt;
+    cursor: pointer;
+}
+
+/* back-ground-page-one */
+
+/* <!-- text-logo --> */
+.text{
+    width: 50%;
+}
+.img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fuul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* <!-- text-logo --> */
+
+
+/* icon+text  */
+
+.container .row h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+
+/* icon+text  */
+
+/* section  */
+
+#section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img{
+    display: flex;
+    justify-content: center;
+}
+
+/* section  */
+
+.icon_center{
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width:576px) {
+    .navbar .navbar-brand .email{
+        text-align: center;
+    }
+}
